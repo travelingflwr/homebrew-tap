@@ -1,28 +1,28 @@
 class Rdxt < Formula
   desc "Markdown, made for Rex: read and write Markdown as real text in your terminal"
   homepage "https://github.com/travelingflwr/rex-doc"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/travelingflwr/rex-doc/releases/download/v0.4.0/rdxt_0.4.0_darwin_arm64.tar.gz"
-      sha256 "125724fcf96f0fb271fd1d26948ae54bf3397ce62787ed29d45260ca923171d0"
+      url "https://github.com/travelingflwr/rex-doc/releases/download/v0.4.1/rdxt_0.4.1_darwin_arm64.tar.gz"
+      sha256 "d8a6454b98fe6697084eb0d08b81f6f1254cc6355a9075700cc3bfc40442057d"
     end
     on_intel do
-      url "https://github.com/travelingflwr/rex-doc/releases/download/v0.4.0/rdxt_0.4.0_darwin_amd64.tar.gz"
-      sha256 "d2144e7410d7b649a12ef8526b6e83e8a27e7885c628137494466975a942b407"
+      url "https://github.com/travelingflwr/rex-doc/releases/download/v0.4.1/rdxt_0.4.1_darwin_amd64.tar.gz"
+      sha256 "9bf9873d5f08b2ae475d6d80dfe19ed54f9440d8d7115a1baaf8e98ffab3b86a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/travelingflwr/rex-doc/releases/download/v0.4.0/rdxt_0.4.0_linux_arm64.tar.gz"
-      sha256 "ab244f2c31a4e7710d284276e9163f5a6752004739ed7888dfec88ffc6e5f121"
+      url "https://github.com/travelingflwr/rex-doc/releases/download/v0.4.1/rdxt_0.4.1_linux_arm64.tar.gz"
+      sha256 "ab34d6cc2fc37e366da43b5cf426e669a0bb1645935b4bacfba8564be982896c"
     end
     on_intel do
-      url "https://github.com/travelingflwr/rex-doc/releases/download/v0.4.0/rdxt_0.4.0_linux_amd64.tar.gz"
-      sha256 "79c02576cbbea8f1bcf146b2a19d1d49ab33b487ff3e0aa4f2803a8a24216254"
+      url "https://github.com/travelingflwr/rex-doc/releases/download/v0.4.1/rdxt_0.4.1_linux_amd64.tar.gz"
+      sha256 "5efc84488a3775d70a8107fddae465444575594fdf77a60492775dba395a3246"
     end
   end
 
@@ -40,6 +40,6 @@ class Rdxt < Formula
   end
 
   test do
-    assert_match "rdxt v0.4.0", shell_output("#{bin}/rdxt --version")
+    assert_match "rdxt v0.4.1", shell_output("#{bin}/rdxt --version")
   end
 end
